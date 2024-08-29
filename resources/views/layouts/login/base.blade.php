@@ -1,16 +1,14 @@
-{{-- @include('layouts.login.header')
-@yield('content') --}}
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>
-        @if(Route::currentRouteName() == 'login')
+        @if (Route::currentRouteName() == 'login')
             Portal - Login
         @elseif(Route::currentRouteName() == 'register')
             Portal - Register
         @else
-            Portal - Bootstrap 5 Admin Dashboard Template For Developers
+            Portal - RoboBands
         @endif
     </title>
 
@@ -24,14 +22,15 @@
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- FontAwesome JS-->
-    <script defer src="{{asset('build/assets/plugins/fontawesome/js/all.min.js')}}"></script>
+    <script defer src="{{ asset('build/assets/plugins/fontawesome/js/all.min.js') }}"></script>
 
     <!-- App CSS -->
-    <link id="theme-style" rel="stylesheet" href="{{asset('build/assets/css/portal.css')}}">
+    <link id="theme-style" rel="stylesheet" href="{{ asset('build/assets/css/portal.css') }}">
 
 </head>
 
 <body class="app app-login p-0">
     @yield('content')
 </body>
+
 </html>

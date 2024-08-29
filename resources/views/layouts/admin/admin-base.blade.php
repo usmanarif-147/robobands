@@ -3,6 +3,7 @@
 
 <head>
 
+    <title>RoboBands</title>
     @include('layouts.admin.partials.css')
 
 </head>
@@ -20,17 +21,17 @@
         <div class="app-content pt-3 p-md-3 p-lg-4">
             <div class="container-xl">
 
-               @yield('content')
+                @yield('content')
 
             </div>
         </div>
 
-       @include('layouts.admin.partials.footer')
+        @include('layouts.admin.partials.footer')
 
     </div>
 
 
-   @include('layouts.admin.partials.script')
+    @include('layouts.admin.partials.script')
 
 </body>
 
